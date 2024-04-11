@@ -6,9 +6,6 @@ on:
   workflow_dispatch:
 
 jobs:
-  defaults:
-    run:
-      working-directory: react-app
   # job1:
   #   runs-on: ubuntu-latest
   #   steps:
@@ -26,6 +23,9 @@ jobs:
   #     - name: Task - Say goodbye
   #       run: echo "Goodbye!"
   ReactApp:
+    defaults:
+      run:
+        working-directory: react-app
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
