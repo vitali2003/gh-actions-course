@@ -17,7 +17,7 @@ jobs:
   #         echo "Runner OS: $RUNNER_OS"
   #     - name: Task - Say goodbye
   #       run: echo "Goodbye!"
-  eactApp:
+  reactApp:
     runs-on: ubuntu-latest
     defaults:
       run:
