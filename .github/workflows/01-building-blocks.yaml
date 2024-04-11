@@ -22,7 +22,7 @@ jobs:
   #         echo "Runner OS: $RUNNER_OS"
   #     - name: Task - Say goodbye
   #       run: echo "Goodbye!"
-  React app:
+  ReactApp:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
