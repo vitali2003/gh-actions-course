@@ -6,17 +6,6 @@ on:
   workflow_dispatch:
 
 jobs:
-  # job2:
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - name: Task - Multi-line bash
-  #       run: |
-  #         echo "I am"
-  #         echo "a multi-line script"
-  #         echo "Event name: ${{ github.event_name }} event."
-  #         echo "Runner OS: $RUNNER_OS"
-  #     - name: Task - Say goodbye
-  #       run: echo "Goodbye!"
   reactApp:
     runs-on: ubuntu-latest
     defaults:
