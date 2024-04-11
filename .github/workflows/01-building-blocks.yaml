@@ -14,9 +14,10 @@ jobs:
   echo-goodbye:
     runs-on: ubuntu-latest
     steps:
-      - name: Successful step
+      - name: Multi-line bash
         run: |
-          echo "I will succeed"
-          exit 0
+          echo "I am"
+          echo "a multi-line"
+          echo "script."
       - name: Say goodbye
         run: echo "Goodbye!"
