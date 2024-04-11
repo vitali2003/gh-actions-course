@@ -6,23 +6,23 @@ on:
   workflow_dispatch:
 
 jobs:
-  job1:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Say hello
-        run: echo "Hello, world!"
-  job2:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Task - Multi-line bash
-        run: |
-          echo "I am"
-          echo "a multi-line script"
-          echo "Event name: ${{ github.event_name }} event."
-          echo "Runner OS: $RUNNER_OS"
-      - name: Task - Say goodbye
-        run: echo "Goodbye!"
-  job3:
+  # job1:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Say hello
+  #       run: echo "Hello, world!"
+  # job2:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Task - Multi-line bash
+  #       run: |
+  #         echo "I am"
+  #         echo "a multi-line script"
+  #         echo "Event name: ${{ github.event_name }} event."
+  #         echo "Runner OS: $RUNNER_OS"
+  #     - name: Task - Say goodbye
+  #       run: echo "Goodbye!"
+  React app:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -34,4 +34,5 @@ jobs:
       - name: Install dependencies
         run: npm ci
         working-directory: react-app
-
+      - name: Run Unit Tests
+        run: npm run test
