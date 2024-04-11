@@ -36,3 +36,4 @@ jobs:
         working-directory: react-app
       - name: Run Unit Tests
         run: npm run test
+        working-directory: react-app
