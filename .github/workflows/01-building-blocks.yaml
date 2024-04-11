@@ -19,5 +19,6 @@ jobs:
           echo "I am"
           echo "a multi-line script"
           echo "Event name: ${{ github.event_name }} event."
+          echo "Runner OS: $RUNNER_OS"
       - name: Task - Say goodbye
         run: echo "Goodbye!"
