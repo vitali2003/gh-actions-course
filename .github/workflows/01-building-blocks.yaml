@@ -16,6 +16,6 @@ jobs:
           echo "I am"
           echo "a multi-line"
           echo "script."
-          echo "Event name: ${{ github.event_name }}"
+          echo "Event name: ${{ github.event_name }} event."
       - name: Say goodbye
         run: echo "Goodbye!"
