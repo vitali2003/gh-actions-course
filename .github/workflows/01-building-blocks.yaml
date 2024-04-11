@@ -6,11 +6,6 @@ on:
   workflow_dispatch:
 
 jobs:
-  # job1:
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - name: Say hello
-  #       run: echo "Hello, world!"
   # job2:
   #   runs-on: ubuntu-latest
   #   steps:
@@ -22,11 +17,11 @@ jobs:
   #         echo "Runner OS: $RUNNER_OS"
   #     - name: Task - Say goodbye
   #       run: echo "Goodbye!"
-  ReactApp:
+  eactApp:
+    runs-on: ubuntu-latest
     defaults:
       run:
         working-directory: react-app
-    runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
