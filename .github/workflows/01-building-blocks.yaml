@@ -1,21 +1,23 @@
 name: 01 - Building Blocks
 
-on: push
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
 
 jobs:
-  echo-hello:
+  job1:
     runs-on: ubuntu-latest
     steps:
       - name: Say hello
         run: echo "Hello, world!"
-  echo-goodbye:
+  job2:
     runs-on: ubuntu-latest
     steps:
-      - name: Multi-line bash
+      - name: Task - Multi-line bash
         run: |
           echo "I am"
-          echo "a multi-line"
-          echo "script."
+          echo "a multi-line script"
           echo "Event name: ${{ github.event_name }} event."
-      - name: Say goodbye
+      - name: Task - Say goodbye
         run: echo "Goodbye!"
