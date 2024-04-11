@@ -22,3 +22,11 @@ jobs:
           echo "Runner OS: $RUNNER_OS"
       - name: Task - Say goodbye
         run: echo "Goodbye!"
+  job3:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+      uses: actions/checkout@v4
+      - name: List files
+        run: ls -la
+
