@@ -2,3 +2,5 @@ node_modules
 !.github/actions/**/node_modules
 venv/
 .DS_Store
+.idea/
+.gitignore
